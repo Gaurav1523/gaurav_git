@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input id="box1" type="text" placeholder="enter first number ">
+  <input id="box2" type="text" placeholder="second number">
+  <button onclick="addNumber()">+</button>
+  <button onclick="subNumber()">-</button>
+  <button onclick="mulNumber()">*</button>
+  <button onclick="divNumber()">/</button>
+  <p id="result"></p>
+
+  <script>
+    function addNumber()
+    {
+    let a = Number(document.getElementById("box1").value);
+    let b = Number(document.getElementById("box2").value);
+    let sum = a + b;
+    document.getElementById("result").textContent = "Result =" + sum ;
+    }
+     
+    function subNumber()
+    {
+      let a = Number(document.getElementById("box1").value); 
+      let b = Number(document.getElementById("box2").value);
+      let sub = a - b ;
+      document.getElementById("result").textContent = "Result = " + sub;
+    }
+
+    function mulNumber()
+    {
+      let a = Number(document.getElementById("box1").value); 
+      let b = Number(document.getElementById("box2").value);
+      let mul = a * b ;
+      document.getElementById("result").textContent = "Result = " + mul;
+    }
+    function divNumber()
+    {
+      let a = Number(document.getElementById("box1").value); 
+      let b = Number(document.getElementById("box2").value);
+      let div = a / b ;
+      document.getElementById("result").textContent = "Result = " + div;
+    }
+  </script>
+  
+</body>
+</html>
