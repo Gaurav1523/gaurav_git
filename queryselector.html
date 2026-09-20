@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>queryselector</title>
+</head>
+<body>
+  <p class="text">hello my name is gaurav</p>
+  <button onclick="changemessage()">click</button>
+
+  <script>
+    function changemessage()
+    {
+      let msg = document.querySelector(".text");
+      msg.textContent = "patil";
+    }
+
+    function change()
+    {
+      let text = document.querySelectorAll(".text1");
+      text.forEach(function(p)
+      {
+        p.style.color = "red";
+      });
+    }
+  </script>
+
+  <!-- //"#box"      // ID
+    ".text"     // class
+    "p"         // tag
+    //querySelector() → first matching element
+
+    //querySelectorAll() → all matching elements
+
+    //Lekin querySelectorAll() se multiple elements milte  hain, isliye normally hum forEach() use karte hain. -->
+    
+  
+
+    <p class="text1" >one</p>
+    <p class="text1" >two</p>
+    <p class="text1" >three</p>
+    <p class="text1" >four</p>
+    <button onclick="change()">click</button>
+</body>
+</html>
