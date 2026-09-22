@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 id="heading">hello world</h1>
+  <button id="btn">click</button>
+
+  <p id="para"> good morning</p>
+  <button id="butt">click</button>
+
+  <script>
+
+   
+      let head = document.getElementById("heading");
+      let button = document.getElementById("btn");
+       button.addEventListener("click",function()
+      {
+          head.textContent = "hello javscript";
+       });
+
+
+       let query = document.getElementById("para");
+       let buttons = document.getElementById("butt");
+       buttons.addEventListener("click" , function()
+       {
+          query.textContent = "welcome to dom";
+       });
+   
+  </script>
+  
+</body>
+</html>
